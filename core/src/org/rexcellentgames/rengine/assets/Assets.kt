@@ -1,6 +1,7 @@
 package org.rexcellentgames.rengine.assets
 
 import com.badlogic.gdx.assets.AssetManager
+import org.rexcellentgames.rengine.assets.mod.ModManager
 
 object Assets {
 	lateinit var manager: AssetManager
@@ -11,6 +12,7 @@ object Assets {
 
 		Audio.loadAssets()
 		Graphics.targetAssets()
+		ModManager.targetAssets()
 	}
 
 	fun updateLoading(): Boolean {
@@ -36,6 +38,7 @@ object Assets {
 	fun onLoadingFinish() {
 		Audio.loadAssets()
 		Graphics.loadAssets()
+		ModManager.loadAssets()
 	}
 
 	fun destroy() {

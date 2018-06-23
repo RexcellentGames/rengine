@@ -60,6 +60,9 @@ project(":core") {
         compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-controllers:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+        compile group: 'org.luaj', name: 'luaj-jse', version: '3.0.1'
+        compile "com.code-disaster.steamworks4j:steamworks4j:1.7.0"
+        compile "com.code-disaster.steamworks4j:steamworks4j-server:1.7.0"
     }
 }
 
