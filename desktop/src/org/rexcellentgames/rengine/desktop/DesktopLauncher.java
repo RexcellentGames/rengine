@@ -1,15 +1,17 @@
 package org.rexcellentgames.rengine.desktop;
 
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import org.rexcellentgames.burningknight.App;
 import org.rexcellentgames.burningknight.game.AssetLoadState;
 import org.rexcellentgames.rengine.Engine;
 
 public class DesktopLauncher {
 	public static void main(String[] arg) {
-		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 
-		new LwjglApplication(new Engine(new App(new AssetLoadState())), config);
+		// todo, config the app here
+
+		new Lwjgl3Application(new Engine(new App(new AssetLoadState())), config);
 	}
 }
